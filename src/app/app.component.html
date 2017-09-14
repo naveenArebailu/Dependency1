@@ -1,0 +1,13 @@
+<h1>
+  {{title}}
+</h1>
+<table *ngIf="persons.length > 0">
+  <th>Name</th>
+  <th>Salary</th>
+  <tr *ngFor="let person of persons">
+    <td>{{person.name}}</td>
+    <td>{{person.salary}}</td>
+  </tr>
+</table>
+
+Sum of Salary is :<input type="text" [(ngModel)]="sums"/>
